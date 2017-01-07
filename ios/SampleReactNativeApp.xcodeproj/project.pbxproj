@@ -852,6 +852,10 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
+					"-framework",
+					CFNetwork,
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
 					"-lc++",
 				);
 				PRODUCT_NAME = SampleReactNativeApp;
