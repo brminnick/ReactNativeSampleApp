@@ -11,4 +11,5 @@ In the Xamarin.UITest, we can now create a field, `readonly Query TextInput`, an
 https://github.com/brminnick/ReactNativeSampleApp/blob/master/UITests/UITests/Tests.cs#L23
 
 All tests were verified in Xamarin Test Cloud, and the results are viewable here:
+
 https://testcloud.xamarin.com/test/com-minnick-samplereactnativeapp_c47fa127-61e7-4598-8134-0de14d1ad694/
