@@ -18,12 +18,19 @@ export default class SampleReactNativeApp extends Component {
 
   render() {
     return (
-      <TextInput
-        style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-        onChangeText={(text) => this.setState({text})}
-        value={this.state.text}
-        accessibilityLabel="TextInputAccessibilityId"
-      />
+      <TextInput style={{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        <TextInput
+          style={{height: 40, borderColor: 'steelblue', borderWidth: 1}}
+          onChangeText={(text) => this.setState({text})}
+          value={this.state.text}
+          accessibilityLabel="TextInputAccessibilityId"
+        />
+      </TextInput>
     );
   }
 }
