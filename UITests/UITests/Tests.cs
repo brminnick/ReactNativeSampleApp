@@ -27,12 +27,12 @@ namespace UITests
 		public void BeforeEachTest()
 		{
 			app = AppInitializer.StartApp(platform);
+			app.Screenshot("App Initialized");
 		}
 
 		[Test]
 		public void AppLaunches()
 		{
-			app.Screenshot("First screen.");
 		}
 
 		[Test]
@@ -46,6 +46,8 @@ namespace UITests
 			app.ClearText();
 			app.EnterText(enteredText);
 			app.DismissKeyboard();
+
+			app.Screenshot($"Entered Text: {enteredText}");
 
 			//Assert
 			var retrivedText = app.Query(TextInput)?.FirstOrDefault()?.Text;
