@@ -9,3 +9,13 @@ In the JavaScript source code, add a unique identifier to each on-screen element
 In the Xamarin.UITest, we can now create a field, `readonly Query TextInput`, and initialize it using the same property: [`TextInput = x => x.Marked("TextInputAccessibilityId");`](https://github.com/brminnick/ReactNativeSampleApp/blob/master/UITests/UITests/Tests.cs#L23). Now we can [interact with this on-screen element in our Xamarin.UITest](https://github.com/brminnick/ReactNativeSampleApp/blob/master/UITests/UITests/Tests.cs#L45)!
 
 All tests were verified in Xamarin Test Cloud, and the [results are viewable here](https://testcloud.xamarin.com/test/com-minnick-samplereactnativeapp_3df4d099-19e8-412e-907d-8dce6391aba0/).
+
+## ToDo: Install Node Packages 
+1. Install Node.js
+  * [Tutorial for Windows PC](http://blog.teamtreehouse.com/install-node-js-npm-windows)
+  * [Tutorial for Mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
+2. Open Terminal on Mac or Cmd on Windows
+3. Navigate to the project directory
+  * E.g. `cd ~/Projects/GitHub/ReactNativeSampleApp/`
+4. Install Node Packages
+  * In the command-line utility, enter `npm install`
